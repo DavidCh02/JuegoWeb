@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado - Animales y Naturaleza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <button id="add-word-btn">Agregar Palabra</button>
+        <div id="add-word-form">
+            <input type="text" id="new-word" placeholder="Nueva palabra" />
+            <input type="text" id="new-hint" placeholder="Pista" />
+            <button id="submit-word-btn">Agregar</button>
+        </div>
+        <div id="hangman-drawing">
+            <div id="base"></div>
+            <div id="pole"></div>
+            <div id="top"></div>
+            <div id="rope"></div>
+            <div id="head"></div>
+            <div id="body"></div>
+            <div id="left-arm"></div>
+            <div id="right-arm"></div>
+            <div id="left-leg"></div>
+            <div id="right-leg"></div>
+        </div>
+        <div id="word-display"></div>
+        <div id="alphabet"></div>
+        <div id="message"></div>
+        <div id="hint-display"></div>
+        <button id="hint-btn">Pedir Pista</button>
+        <button id="new-word-btn" style="display: none;">Siguiente Palabra</button>
+        <table id="scoreboard">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntuación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las posiciones se insertarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
